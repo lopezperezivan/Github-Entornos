@@ -1,0 +1,201 @@
+body {
+
+    background-color: #c1d8f7;
+    justify-content: center;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #F6D155;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    grid-area: titulo;
+    background-color: #223A5E;
+    padding: 20px;
+    border-bottom: 5px solid #F6D155;
+    text-align: center;
+    font-size: 1.8em;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #F6D155;
+}
+
+header::first-letter {
+    font-size: 1.5em;
+}
+
+#navlist {
+    grid-area: indice;
+    background-color: #223A5E;
+    color: #F6D155;
+    margin: 3em 0 3em 0;
+}
+
+#container {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "indice"
+        "caja1"
+        "caja2"
+        "caja3"
+        "caja4"
+        "caja5"
+        "caja6"
+        "footer"
+    ;
+}
+#titulo{
+    grid-area: titulo;
+}
+#caja1 {
+    grid-area: caja1;
+}
+
+#caja2 {
+    grid-area: caja2;
+}
+
+#caja3 {
+    grid-area: caja3;
+}
+
+#caja3 h3 {
+    color: #a52a2a;
+    text-align: left;
+}
+
+#caja4 {
+    grid-area: caja4;
+}
+#caja5 {
+    grid-area: caja5;
+}
+#caja6 {
+    grid-area: caja6;
+}
+
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+th,
+td {
+    text-align: center;
+    border: 0.1px solid rgba(114, 114, 114, 0.116);
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+    background-color: #223A5E;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #D49F75;
+}
+
+tr:nth-child(odd) {
+    background-color: #C48F65;
+}
+
+
+img {
+    border: 3px solid gray;
+    margin-top: 10px;
+}
+
+figure {
+    text-align: center;
+}
+
+
+#flex {
+    display: flex;
+    flex-flow: row;
+
+
+}
+
+#flex img {
+    width: 15vw;
+}
+
+
+h3 {
+    text-align: center;
+}
+
+h2 {
+    color: brown;
+    border-bottom: 1px solid #a52a2a;
+}
+
+/*8-Footer de la pogina*/
+footer {
+    grid-area: footer;
+    padding: 1em 0 1em 0;
+    text-align: center;
+    color: #F6D155;;
+    background-color: #223A5E;
+    border-top: 5px solid #F6D155;;
+
+}
+
+/*Pantalla completa*/
+@media screen and (min-width: 768px) {
+    #container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "titulo titulo titulo titulo"
+            "indice caja1 caja1 sidebar"
+            "sidebar1 caja2 caja2 sidebar"
+            "sidebar1 caja3 caja3 sidebar"
+            "sidebar1 caja4 caja4 sidebar"
+            "sidebar1 caja5 caja5 sidebar"
+            "sidebar1 caja6 caja6 sidebar"
+            "footer footer footer footer";
+    }
+
+    #navlist {
+
+        width: 17vw;
+        height: fit-content;
+    }
+
+   
+    #derecha{
+        grid-area: sidebar;
+    }
+    #izq{
+        grid-area: sidebar1;
+    }
+
+    #flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #flex img {
+        max-width: 100%;
+    }
+
+}
