@@ -7,8 +7,10 @@ body {
 
 .videoyt {
 justify-content: center;
-border: solid;
-border-radius: 5%;
+border:3px solid black;
+max-width: 89.6%;
+max-height: 60%;
+
 }
 .align-right {
    justify-content: right ;
