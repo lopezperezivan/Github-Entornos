@@ -4,6 +4,12 @@ body {
     justify-content: center;
     
 }
+
+.videoyt {
+justify-content: center;
+border: solid;
+border-radius: 5%;
+}
 .align-right {
    justify-content: right ;
    margin-left: 50%;
