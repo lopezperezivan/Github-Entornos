@@ -1,6 +1,6 @@
 body {
 
-    background-color: #c1d8f7;
+    background-color: #c2d9f8;
     justify-content: center;
     
 }
@@ -21,7 +21,7 @@ a:hover {
 
 header {
     grid-area: titulo;
-    background-color: #223A5E;
+    background-color:  rgb(113, 18, 18);
     padding: 20px;
     border-bottom: 5px solid #F6D155;
     text-align: center;
@@ -37,7 +37,7 @@ header::first-letter {
 
 #navlist {
     grid-area: indice;
-    background-color: #223A5E;
+    background-color: rgb(113, 18, 18);
     color: #F6D155;
     margin: 3em 0 3em 0;
 }
